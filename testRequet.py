@@ -1,8 +1,7 @@
 import requests
 
 #Токен
-token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWxkb2toaW5fZmludW5pdiJ9.78GmL7yu_2' +\
-'vEURoQS6ExV058oBJfMHbUuOcgiAj-CAU'
+token = ''
 #Базовый адрес
 base_url='http://rtpiapi.hrdn.io/'
 
