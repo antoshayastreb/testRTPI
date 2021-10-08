@@ -1,4 +1,6 @@
 /.idea
 /.venv
 /venv
-/token.txt
+/*.ini
+/*.csv
+/*.xlsx
