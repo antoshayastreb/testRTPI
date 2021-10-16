@@ -1,16 +1,8 @@
-import configparser
 import json
 import pandas as pd
 import requests
+from config import token
 
-config = configparser.ConfigParser()
-
-try:
-  config.read("settings.ini")
-  token = config["Base"]["token_string"]
-except configparser.ParsingError as p:
-  print(p)
-  token = ""
 #Базовый адрес
 base_url='http://rtpiapi.hrdn.io/'
 
