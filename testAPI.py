@@ -1,20 +1,8 @@
 import asyncio
-import configparser
+from config import token, base_url
 import aiohttp
 from asyncio.queues import Queue
 import time
-
-
-config = configparser.ConfigParser()
-#Токен
-try:
-  config.read("settings.ini")
-  token = config["Base"]["token_string"]
-except configparser.ParsingError as p:
-  print(p)
-  token = ""
-#Базовый адрес
-base_url='http://rtpiapi.hrdn.io/'
 
 
 #Получение указанного количества записей из указанной таблицы

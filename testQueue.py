@@ -1,11 +1,9 @@
 import asyncio
 import aiohttp
-from config import token
+from config import token, base_url
 from asyncio.queues import Queue
 import time
 
-#Базовый адрес
-base_url='http://rtpiapi.hrdn.io/'
 #"Воркер" для заупска фукции "getExactCountAsync"
 async def worker(name, queue: Queue):
     #Получение названия таблицы из очереди
