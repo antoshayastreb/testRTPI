@@ -1,10 +1,17 @@
 import asyncio
+import configparser
 import aiohttp
 from asyncio.queues import Queue
 import time
 
+config = configparser.ConfigParser()
 #Токен
-token = ''
+try:
+  config.read("settings.ini")
+  token = config["Base"]["token_string"]
+except configparser.ParsingError as p:
+  print(p)
+  token = ""
 #Базовый адрес
 base_url='http://rtpiapi.hrdn.io/'
 #"Воркер" для заупска фукции "getExactCountAsync"

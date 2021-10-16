@@ -1,2 +1,6 @@
 /.idea
+/.venv
 /venv
+/*.ini
+/*.csv
+/*.xlsx
